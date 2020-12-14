@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 50px;
+    background: #24b273;
+    color: #fdf6f6;
+}
+
+h1{
+    font-size: 56px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 100%;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+#test {
+    text-align: center;
+    border: 25px solid #fdf6f6; 
+    font-size:100%;
+    font-weight:bold;
+}
+ 
+pre {
+    text-align:center;
+    color:black;
+    text-decoration:underline;
+    text-decoration-color:gray;
+    text-decoration-style:solid;    
+}
+
+img {
+    border-radius: 50%;
+    border: 15px solid #167a8b;
+    transition: 0.5s;
+}
+img:hover{
+    border: 40px solid #5d13e7;
+    cursor: pointer;
+}
+
+#link_project{
+    text-decoration: none;
+    color: #5d13e7;
+    transition: 0.7s;
+}
+#link_project:hover{
+    color: #fdf6f6;
+}
+
+#div {
+    border: 5px solid #243d44;
+    border-radius: 35px;
+}
+
+#skills{
+    text-decoration: overline;
+    color: #243d44;
+}
+
+.nightStyle{
+    transition: 1s;
+    background: #200f21;
+    color: #2dea8f;
+}
+.lightStyle{
+    transition: 1s;
+    background: #24b273;
+}
+
+
+
+/* GAME CSS */
+
+#game{
+    width: 1000px;
+    height: 200px;
+    border: 2px solid #243d44;
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: #ff304f;
+    position: relative;
+    top: 150px; //game height - character height (200 - 50)
+}
+.animate{
+    animation: jump 300ms linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: #0e153a;
+    position: relative;
+    top: 130px; 
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px} 
+    100%{left: -20px}
+}
